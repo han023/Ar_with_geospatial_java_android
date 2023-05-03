@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin"
+    tools:context=".signin">
+
+    <LinearLayout
+        android:id="@+id/signln1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+    <LinearLayout
+        android:id="@+id/backsigin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:paddingLeft="10sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/skin"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME TO SMART AUK"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/skin"
+            android:textSize="26sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signln2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20sp"
+        android:paddingLeft="20sp"
+        android:paddingTop="50sp"
+        app:layout_constraintTop_toBottomOf="@id/signln1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in to\nyour account"
+            android:textAlignment="textStart"
+            android:textFontWeight="700"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/siginemail"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusedByDefault="true"
+            android:hint="Email*"
+            android:inputType="textEmailAddress"
+            android:paddingTop="30sp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/siginpass"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Password*"
+            android:inputType="textPassword"
+            android:paddingTop="30sp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+
+        <Button
+            android:id="@+id/siginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/skin"
+            android:text="Sign in"
+            android:backgroundTint="@color/red"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account yet? "
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin"
+    tools:context=".mainscreen">
+
+
+    <LinearLayout
+        android:id="@+id/screenln1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/red"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WOLF"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/skin"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+
+        <ImageView
+            android:id="@+id/mainimage"
+            android:src="@drawable/logo"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:layout_width="100sp"
+            android:layout_height='match_parent'
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PACK"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/skin"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/screenln2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@id/screenln1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/screensln3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/screenar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/screenln1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:backgroundTint="@color/red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="AR Class Finder"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/screencalendar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/screenln1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:backgroundTint="@color/red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="AUK Calendar    "
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/screenschedule"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/screenln1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:backgroundTint="@color/red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Your Schedule   "
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/screensln3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/screenln2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/screenadver"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/screenweb"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/red"
+            android:text='AUK\nWebsite'
+            android:textSize="10sp"
+            android:textColor="@color/skin"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/screenservice"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/red"
+            android:text='Self\nService'
+            android:textSize="10sp"
+            android:textColor="@color/skin"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/screendegree"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/red"
+            android:text='Degree\nWorks'
+            android:textColor="@color/skin"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    
+    
+    <ImageView
+        android:id="@+id/screenadver"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/bottom"
+        android:background="@color/red"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="TODO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
